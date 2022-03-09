@@ -13,7 +13,7 @@ def resultados(numeros):
 def getLista(numeros):
     lista=[]
     for n in numeros:
-        lista.append(int(n))
+        lista.append(float(n))
     return lista
 
 def media(numeros):
