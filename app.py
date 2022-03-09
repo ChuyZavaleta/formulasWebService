@@ -3,7 +3,7 @@ app=Flask(__name__)
 
 @app.route('/formulas/<string:numeros>')
 def resultados(numeros):
-    listanumeros = getLista(numeros.split('-'))
+    listanumeros = getLista(numeros.split('_'))
 
     return jsonify({"Media": media(listanumeros),
     "Moda":moda(listanumeros), "Mediana":mediana(listanumeros),
